@@ -12,6 +12,7 @@ export function renderApp(containerId) {
             <div class="main-content">
                 <p>¡Hola! Soy Gleb y aquí puedes ver mis proyectos destacados...</p>
                 <div class="projects">
+                    <a href="https://idgleb.github.io/Pos-sistema/" class="project-btn" target="_blank">POS Sistema</a>
                     <a href="https://github.com/idgleb/ControlParental" class="project-btn" target="_blank">Control Parental</a>
                     <a href="https://github.com/idgleb/jetinno" class="project-btn" target="_blank">Jetinno Store</a>
                     <a href="https://github.com/idgleb/blackjack" class="project-btn" target="_blank">Black Jack</a>
