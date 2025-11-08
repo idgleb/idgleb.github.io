@@ -25,9 +25,9 @@ export function renderApp(containerId) {
             <div class="footer-links">
                 <a href="https://idgleb.github.io/Pos-sistema/" target="_blank">POS Sistema</a>
                 <span class="footer-separator">•</span>
-                <a href="https://idgleb.github.io/Pos-sistema/privacy" target="_blank">Política de Privacidad</a>
+                <a href="https://idgleb.github.io/privacy.html" target="_blank">Política de Privacidad</a>
                 <span class="footer-separator">•</span>
-                <a href="https://idgleb.github.io/Pos-sistema/terms" target="_blank">Términos de Servicio</a>
+                <a href="https://idgleb.github.io/terms.html" target="_blank">Términos de Servicio</a>
             </div>
         </footer>
     `;
