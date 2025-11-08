@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Términos de Servicio de POS Sistema - Sistema de punto de venta">
+    <title>Términos de Servicio - POS Sistema</title>
+    <link rel="stylesheet" href="https://idgleb.github.io/src/ui/styles.css">
+    <style>
+        .legal-container {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 24px;
+            box-shadow: 
+                0 8px 32px var(--glass-shadow),
+                inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            padding: 48px 32px;
+            margin: 48px auto;
+            position: relative;
+            z-index: 2;
+            max-width: 900px;
+            width: calc(100% - 40px);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            text-align: left;
+        }
+        .legal-container h1 {
+            color: var(--text-primary);
+            font-size: 2.5em;
+            margin-bottom: 16px;
+            text-align: center;
+        }
+        .legal-container .last-updated {
+            color: var(--text-secondary);
+            text-align: center;
+            margin-bottom: 32px;
+            font-size: 0.9em;
+        }
+        .legal-container section {
+            margin-bottom: 32px;
+        }
+        .legal-container h2 {
+            color: var(--text-primary);
+            font-size: 1.8em;
+            margin-bottom: 16px;
+            margin-top: 32px;
+        }
+        .legal-container p {
+            color: var(--text-secondary);
+            line-height: 1.8;
+            margin-bottom: 16px;
+        }
+        .legal-container a {
+            color: #6dd5ed;
+            text-decoration: none;
+        }
+        .legal-container a:hover {
+            text-decoration: underline;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 24px;
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .back-link:hover {
+            color: var(--text-primary);
+        }
+        @media (max-width: 768px) {
+            .legal-container {
+                padding: 32px 20px;
+                margin: 24px auto;
+            }
+            .legal-container h1 {
+                font-size: 2em;
+            }
+            .legal-container h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <canvas id="bg3d"></canvas>
+    <div id="glow"></div>
+    <div class="legal-container">
+        <a href="https://idgleb.github.io/" class="back-link">← Volver al portafolio</a>
+        <a href="https://idgleb.github.io/Pos-sistema/" class="back-link" style="margin-left: 16px;">→ Ir a POS Sistema</a>
+        
+        <h1>Términos de Servicio</h1>
+        <p class="last-updated">Última actualización: <span id="last-updated-date"></span></p>
+
+        <section>
+            <h2>1. Aceptación de los Términos</h2>
+            <p>
+                Al usar POS Sistema, aceptas estos términos de servicio. 
+                Si no estás de acuerdo con estos términos, no uses la aplicación.
+            </p>
+        </section>
+
+        <section>
+            <h2>2. Uso de la Aplicación</h2>
+            <p>
+                POS Sistema es una aplicación web gratuita que funciona completamente en tu navegador. 
+                Puedes usarla para gestionar productos, ventas, gastos y movimientos de tu negocio.
+            </p>
+        </section>
+
+        <section>
+            <h2>3. Responsabilidad por los Datos</h2>
+            <p>
+                Tú eres responsable de mantener backups de tus datos. Aunque la aplicación ofrece 
+                funcionalidad de backup, es tu responsabilidad asegurarte de que tus datos estén 
+                respaldados adecuadamente.
+            </p>
+        </section>
+
+        <section>
+            <h2>4. Disponibilidad del Servicio</h2>
+            <p>
+                POS Sistema se proporciona "tal cual" sin garantías de ningún tipo. 
+                No garantizamos que la aplicación esté disponible en todo momento o libre de errores.
+            </p>
+        </section>
+
+        <section>
+            <h2>5. Modificaciones</h2>
+            <p>
+                Nos reservamos el derecho de modificar o discontinuar la aplicación en cualquier momento 
+                sin previo aviso.
+            </p>
+        </section>
+
+        <section>
+            <h2>6. Limitación de Responsabilidad</h2>
+            <p>
+                En la medida máxima permitida por la ley, no seremos responsables por cualquier daño 
+                directo, indirecto, incidental o consecuente que resulte del uso de esta aplicación.
+            </p>
+        </section>
+
+        <section>
+            <h2>7. Propiedad Intelectual</h2>
+            <p>
+                El código de POS Sistema está disponible como código abierto. 
+                Puedes usar, modificar y distribuir el código según la licencia del proyecto.
+            </p>
+        </section>
+
+        <section>
+            <h2>8. Cambios a los Términos</h2>
+            <p>
+                Podemos actualizar estos términos de servicio ocasionalmente. 
+                La fecha de la última actualización se mostrará en la parte superior de esta página.
+            </p>
+        </section>
+    </div>
+
+    <script>
+        // Establecer fecha de última actualización
+        document.getElementById('last-updated-date').textContent = new Date().toLocaleDateString('es-ES', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+    </script>
+</body>
+</html>
+
