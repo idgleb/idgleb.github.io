@@ -27,7 +27,7 @@ function loadGoogleScript() {
 
 function ensureTokenClient() {
     if (!window.google || !window.google.accounts || !window.google.accounts.oauth2) {
-        throw new Error("Google Identity Services no estÃ¡ disponible todavÃ­a.");
+        throw new Error("Google Identity Services no está disponible todavía.");
     }
 
     if (!tokenClient) {
@@ -35,11 +35,13 @@ function ensureTokenClient() {
             client_id: CLIENT_ID,
             scope: SCOPES,
             callback: (response) => {
+                console.log("Callback de Google OAuth recibido:", response);
                 if (activeButton) {
                     activeButton.disabled = false;
                 }
                 if (response.error) {
                     updateStatus(`Error: ${response.error}`);
+                    console.error("Error en callback:", response.error);
                     return;
                 }
 
@@ -47,10 +49,11 @@ function ensureTokenClient() {
                 updateStatus(`Conectado correctamente (${token}).`);
             },
             error_callback: (error) => {
+                console.error("Error callback de Google OAuth:", error);
                 if (activeButton) {
                     activeButton.disabled = false;
                 }
-                updateStatus(`Error: ${error.error}`);
+                updateStatus(`Error: ${error.error || error.type || "Error desconocido"}`);
             }
         });
     }
@@ -67,18 +70,25 @@ function updateStatus(message) {
 
 async function handleClick() {
     const button = document.getElementById("gdrive-test-btn");
-    if (!button) return;
+    if (!button) {
+        console.error("Botón gdrive-test-btn no encontrado");
+        return;
+    }
 
     activeButton = button;
     button.disabled = true;
     updateStatus("Cargando servicios de Google...");
 
     try {
+        console.log("Iniciando carga de Google Identity Services...");
         await loadGoogleScript();
+        console.log("Google Identity Services cargado, inicializando cliente...");
         const client = ensureTokenClient();
         updateStatus("Solicitando permisos...");
+        console.log("Solicitando token de acceso...");
         client.requestAccessToken({ prompt: "consent" });
     } catch (error) {
+        console.error("Error en handleClick:", error);
         if (activeButton) {
             activeButton.disabled = false;
         }
@@ -88,9 +98,14 @@ async function handleClick() {
 
 export function initGoogleDriveTestButton() {
     const button = document.getElementById("gdrive-test-btn");
-    if (!button) return;
+    if (!button) {
+        console.warn("Botón gdrive-test-btn no encontrado en el DOM");
+        return;
+    }
 
+    console.log("Inicializando botón de prueba de Google Drive");
     button.addEventListener("click", () => {
+        console.log("Click en botón de Google Drive detectado");
         handleClick();
     });
 }
