@@ -1,4 +1,4 @@
-// src/ui/components.js
+﻿// src/ui/components.js
 export function renderApp(containerId) {
     const app = document.getElementById(containerId);
     app.innerHTML = `
@@ -10,7 +10,7 @@ export function renderApp(containerId) {
                 <h1>Gleb Ursol</h1>
             </div>
             <div class="main-content">
-                <p>¡Hola! Soy Gleb y aquí puedes ver mis proyectos destacados...</p>
+                <p>Hola! Soy Gleb y aqui puedes ver mis proyectos destacados...</p>
                 <div class="projects">
                     <a href="https://idgleb.github.io/Pos-sistema/" class="project-btn" target="_blank">POS Sistema</a>
                     <a href="https://github.com/idgleb/ControlParental" class="project-btn" target="_blank">Control Parental</a>
@@ -20,16 +20,21 @@ export function renderApp(containerId) {
                     <a href="https://github.com/idgleb/Easy-Gastos" class="project-btn" target="_blank">Easy-Gastos</a>
                 </div>
             </div>
+            <div class="test-drive-section">
+                <h2 class="test-drive-title">Prueba rapida de Google Drive</h2>
+                <p class="test-drive-description">Usa este boton para ejecutar el flujo de autenticacion de Google Drive directamente desde el landing.</p>
+                <button id="gdrive-test-btn" class="test-drive-btn">Conectar Google Drive (prueba)</button>
+                <div id="gdrive-test-status" class="test-drive-status">Aun no has iniciado sesion.</div>
+            </div>
         </div>
         <footer class="site-footer">
             <div class="footer-links">
                 <a href="https://idgleb.github.io/Pos-sistema/" target="_blank">POS Sistema</a>
-                <span class="footer-separator">•</span>
-                <a href="https://idgleb.github.io/privacy.html" target="_blank">Política de Privacidad</a>
-                <span class="footer-separator">•</span>
-                <a href="https://idgleb.github.io/terms.html" target="_blank">Términos de Servicio</a>
+                <span class="footer-separator">â€¢</span>
+                <a href="https://idgleb.github.io/privacy.html" target="_blank">Politica de Privacidad</a>
+                <span class="footer-separator">â€¢</span>
+                <a href="https://idgleb.github.io/terms.html" target="_blank">Terminos de Servicio</a>
             </div>
         </footer>
     `;
 }
-
