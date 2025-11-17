@@ -20,12 +20,6 @@ export function renderApp(containerId) {
                     <a href="https://github.com/idgleb/Easy-Gastos" class="project-btn" target="_blank">Easy-Gastos</a>
                 </div>
             </div>
-            <div class="test-drive-section">
-                <h2 class="test-drive-title">Prueba rapida de Google Drive</h2>
-                <p class="test-drive-description">Usa este boton para ejecutar el flujo de autenticacion de Google Drive directamente desde el landing.</p>
-                <button id="gdrive-test-btn" class="test-drive-btn">Conectar Google Drive (prueba)</button>
-                <div id="gdrive-test-status" class="test-drive-status">Aun no has iniciado sesion.</div>
-            </div>
         </div>
         <footer class="site-footer">
             <div class="footer-links">
