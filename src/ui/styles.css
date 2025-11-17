@@ -599,7 +599,7 @@ p {
 }
 
 /* Orientación landscape en móviles - Composición horizontal */
-@media (max-height: 500px) and (orientation: landscape) {
+@media (max-height: 700px) and (orientation: landscape) {
     :root {
         --container-margin-top: 10px;
         --container-padding: 16px 20px;
@@ -677,7 +677,7 @@ p {
 }
 
 /* Optimizaciones para tablets en landscape */
-@media (min-width: 768px) and (max-height: 600px) and (orientation: landscape) {
+@media (min-width: 768px) and (max-height: 800px) and (orientation: landscape) {
     :root {
         --container-margin-top: 20px;
         --container-padding: 24px 28px;
