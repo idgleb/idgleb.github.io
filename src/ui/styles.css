@@ -57,7 +57,7 @@ body {
 }
 
 #app {
-    margin-bottom: 32px;
+    margin-bottom: 48px;
 }
 @keyframes glowcycle {
     0% { opacity: 0.7; filter: blur(80px) brightness(1.3); }
