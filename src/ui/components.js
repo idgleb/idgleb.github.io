@@ -12,7 +12,7 @@ export function renderApp(containerId) {
             <div class="main-content">
                 <p>Hola! Soy Gleb y aqui puedes ver mis proyectos destacados...</p>
                 <div class="projects">
-                    <a href="https://idgleb.github.io/Pos-sistema/" class="project-btn" target="_blank">POS Sistema</a>
+                    <a href="https://idgleb.github.io/Pos-sistema/home.html" class="project-btn" target="_blank">POS Sistema</a>
                     <a href="https://postulamatic.app/" class="project-btn" target="_blank">PostulaMatic</a>
                     <a href="https://github.com/idgleb/ControlParental" class="project-btn" target="_blank">Control Parental</a>
                     <a href="https://github.com/idgleb/jetinno" class="project-btn" target="_blank">Jetinno Store</a>
@@ -25,7 +25,7 @@ export function renderApp(containerId) {
         </div>
         <footer class="site-footer">
             <div class="footer-links">
-                <a href="https://idgleb.github.io/Pos-sistema/" target="_blank">POS Sistema</a>
+                <a href="https://idgleb.github.io/Pos-sistema/home.html" target="_blank">POS Sistema</a>
                 <span class="footer-separator">â€¢</span>
                 <a href="https://idgleb.github.io/privacy.html" target="_blank">Politica de Privacidad</a>
                 <span class="footer-separator">â€¢</span>
