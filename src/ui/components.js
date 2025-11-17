@@ -16,7 +16,7 @@ export function renderApp(containerId) {
                     <a href="https://postulamatic.app/" class="project-btn" target="_blank">PostulaMatic</a>
                     <a href="https://github.com/idgleb/ControlParental" class="project-btn" target="_blank">Control Parental</a>
                     <a href="https://github.com/idgleb/jetinno" class="project-btn" target="_blank">Jetinno Store</a>
-                    <a href="https://github.com/idgleb/blackjack" class="project-btn" target="_blank">Black Jack</a>
+                    <a href="https://idgleb.github.io/blackjack-web/" class="project-btn" target="_blank">Black Jack</a>
                     <a href="https://github.com/idgleb/finanzas-app" class="project-btn" target="_blank">Finanzas-App</a>
                     <a href="https://github.com/idgleb/Easy-Gastos" class="project-btn" target="_blank">Easy-Gastos</a>
                 </div>
